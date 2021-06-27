@@ -12,6 +12,12 @@
   color: #4da8da !important;
 }
 
+#scrollIconColour {
+  color: #4da8da !important;
+  stroke: white !important;
+  stroke-width: 30px !important;
+}
+
 #icon:hover {
   color: #4da8da !important;
 }
