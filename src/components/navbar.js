@@ -3,20 +3,20 @@ import '../styles/navbar.css';
 import '../styles/buttonStyling.css';
 import Button from '../components/button';
 
-const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
+const Navbar = (props) => {
+  const [toggle, setToggle] = useState(false);
 
   return (
     <React.Fragment>
       <nav id='navburgertarget' class='navbar' role='navigation' aria-label='main navigation'>
         <div
           style={{ color: 'white' }}
-          className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
+          className={`navbar-burger burger ${toggle ? 'is-active' : ''}`}
           aria-label='menu'
           aria-expanded='false'
           id='burger'
           data-target='navburgertarget'
-          onClick={() => setIsActive(!isActive)}>
+          onClick={() => setToggle(!toggle)}>
           <span aria-hidden='true'></span>
           <span aria-hidden='true'></span>
           <span aria-hidden='true'></span>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <div
           className={`navbar-menu is-transparent navbar-end mt-5 mr-5 ${
-            isActive ? 'is-active has-text-centered' : ''
+            toggle ? 'is-active has-text-centered' : ''
           }`}>
           <div class='navbar-item'>
             <Button buttonText={'Services'} />
