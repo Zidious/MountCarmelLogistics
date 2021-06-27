@@ -6,7 +6,7 @@ import '../styles/buttonStyling.css';
 
 const ScrollTop = () => (
   <React.Fragment>
-    <ScrollToTop showUnder={160} duration={500} style={{ zIndex: 999 }}>
+    <ScrollToTop showUnder={160} duration={1000} style={{ zIndex: 999 }}>
       <FontAwesomeIcon id='iconColour' icon={faArrowUp} size='2x' />
     </ScrollToTop>
   </React.Fragment>
