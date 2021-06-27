@@ -1,0 +1,17 @@
+.button:hover {
+  background-color: #4da8da !important;
+  color: white !important;
+}
+
+#contactIcon:hover {
+  background-color: #4da8da !important;
+  color: white !important;
+}
+
+#iconColour {
+  color: #4da8da !important;
+}
+
+#icon:hover {
+  color: #4da8da !important;
+}

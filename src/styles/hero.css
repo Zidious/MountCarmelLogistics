@@ -1,0 +1,7 @@
+.header-image {
+  background-image: url('/src/assets/hero_image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
